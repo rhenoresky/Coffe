@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(87, 80, 67);
+}
+
+.kaki {
+    background-color: rgb(29, 24, 21);
+}
+
+.nav-bg {
+    background-color: rgb(37, 31, 27);
+}
+
+#bg {
+    background-repeat: no-repeat;
+    width: 100%;
+}

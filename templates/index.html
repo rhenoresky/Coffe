@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cafe</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap5.css' %}">
+    <link rel="stylesheet" href="{% static 'css/kulit.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bg sticky-top">
+        <div class="container-fluid">
+            <div class="navbar-brand ms-2">
+                <img src="{{ logo.logo.url }}" alt="..." width="50">
+                Coffe Shop
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Kontak
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://instagram.com/rhenoresky?igshid=YmMyMTA2M2Y=">Instagram</a></li>
+                            <li><a class="dropdown-item" href="https://wa.me/6281214196304">Whatsapp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-md text-center text-white mb-2 mb-lg-4 mt-1">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <div class="fs-1 mb-1">Welcome To My Cafe</div>
+                <p>Sejak 2018, Cafe Rhyno telah menyediakan banyak olahan makanan maupun minuman yang terbuat dari kopi.
+                    Kami selalu bersemangat menyediakan berbagai oalahan kopi yang diterbangkan setiap hari dari
+                    seluruh penjuru dunia, kami juga menyediakan makanan seperti steak, rendang, sushi, dan berbagai
+                    makanan lainnya yang di olah dari bahan yang segar yang diakui rasanya yang enak oleh semua
+                    pelanggan kami, dan layanan yang berpengetahuan, rapih, mempesona dan penuh perhatian.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-md text-white text-center text-lg-start mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 me-lg-5">
+                <div class="fs-2 mb-1">
+                    Tentang Kopi
+                </div>
+                <p>Kopi adalah minuman hasil seduhan biji kopi yang telah disangrai dan dihaluskan menjadi bubuk. Kopi
+                    merupakan salah
+                    satu komoditas di dunia yang dibudidayakan lebih dari 50 negara. Dua spesies pohon kopi yang dikenal
+                    secara umum yaitu
+                    Kopi Robusta (Coffea canephora) dan Kopi Arabika (Coffea arabica).Sejarah mencatat bahwa penemuan
+                    kopi sebagai minuman berkhasiat dan berenergi pertama kali ditemukan oleh bangsa Etiopia
+                    di Benua Afrika sekitar 3000 tahun (1000 SM) yang lalu.</p>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block mt-lg-4">
+                <img src="{% static 'gambar/foto3.jpg' %}" alt="..." class="rounded img-fluid">
+            </div>
+            <div class="col-7 col-sm-6 col-lg-3">
+                <img src="{% static 'gambar/foto2.jpg' %}" alt="..." class="rounded img-fluid">
+            </div>
+        </div>
+    </div>
+    <div id="manfaat" class="container-md text-white text-center text-lg-start mb-4 mb-sm-5">
+        <div class="row justify-content-center">
+            <div class="col-6 col-lg-5 order-lg-3 ms-lg-5">
+                <div class="fs-2 mb-1">
+                    Manfaat Kopi
+                </div>
+                <div class="d-flex d-lg-block justify-content-center">
+                    <ul class="ps-lg-3 text-start">
+                        <li>Menjaga kesehatan organ hati</li>
+                        <li>Menurunkan berat badan</li>
+                        <li>Mencegah benyakit btak</li>
+                        <li>Menjaga besehatan jantung</li>
+                        <li>Mengurangi risiko diabetes tipe 2</li>
+                        <li>Meningkatkan energi tubuh</li>
+                        <li>Mengurangi risiko kanker</li>
+                        <li>Mengurangi risiko batu empedu</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block mt-lg-4 order-lg-2">
+                <img src="{% static 'gambar/foto4.jpg' %}" alt="..." class="rounded img-fluid">
+            </div>
+            <div class="col-6 col-lg-3 order-lg-1">
+                <img src="{% static 'gambar/foto5.jpg' %}" alt="..." class="rounded img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid nav-bg text-white text-center">
+        <div class="container-md">
+            <div class="row justify-content-center">
+                <div class="col-8 col-sm-6 col-lg-4 mt-4 mb-sm-4">
+                    <div class="fs-3">
+                        Lokasi
+                    </div>
+                    <p>Taman Albar, Desa Bojongpicung, Kec. Bojongpicung, Cianjur, Jawa Barat</p>
+                </div>
+                <div class="col-8 col-sm-6 col-lg-4 mb-4 mt-sm-4">
+                    <div class="fs-3">
+                        Contact
+                    </div>
+                    <div class="mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                        <a href="https://wa.me/6281214196304" class="text-white" style="text-decoration: none;">081214196304</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid kaki py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Website Rheno 2022</small></div>
+    </div>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+</body>
+
+</html>
